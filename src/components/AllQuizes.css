@@ -1,0 +1,35 @@
+.all-quizzes-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .all-quizzes-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .all-quizzes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .all-quizzes-list li {
+    margin-bottom: 10px;
+  }
+  
+  .all-quizzes-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0077c2;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .all-quizzes-link:hover {
+    color: #004e8c;
+  }
+  

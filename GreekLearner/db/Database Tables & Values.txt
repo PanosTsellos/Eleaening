@@ -1,0 +1,39 @@
+CREATE TABLE contactus (
+  id INTEGER ,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  message TEXT NOT NULL,
+  PRIMARY KEY(id AUTOINCREMENT)
+);
+
+CREATE TABLE home(
+  id INTEGER ,
+  title TEXT NOT NULL,
+  content TEXT,
+  date_published TEXT,
+  img_url TEXT,
+  PRIMARY KEY (id AUTOINCREMENT)
+    );
+CREATE UNIQUE INDEX idx_home_title ON home (title);
+
+CREATE TABLE videotutorial(
+  id INTEGER ,
+  title TEXT NOT NULL,
+  content TEXT,
+  date_published TEXT,
+  video_url TEXT NOT NULL,
+  PRIMARY KEY (id AUTOINCREMENT)
+    );
+
+CREATE TABLE "account" (
+	"account_id"	INTEGER NOT NULL,
+	"username"	TEXT NOT NULL,
+	"password"	TEXT NOT NULL,
+	"name"	TEXT,
+	"email"	varchar,
+	"user_type"	TEXT,
+	"status"	INTEGER,
+	PRIMARY KEY("account_id" AUTOINCREMENT)
+);
+
+

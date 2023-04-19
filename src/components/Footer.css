@@ -1,0 +1,28 @@
+.main-footer {
+    color: rgb(0, 0, 0);
+    background-color: #d3d3d4;
+    padding-top: auto;
+    position: relative;
+    bottom: 0;
+    width: auto;
+  }
+  .container-footer{
+    background-color: #a4b2c2;
+  }
+
+  .footerbutton{
+    background-color: #a4b2c2;
+font-size: 15px;
+  }
+  .footerbutton:hover{
+    background-color: #a6c0dd;
+
+  }
+  .parody{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  h4{
+    font-weight: bold;
+    color:rgb(0, 0, 0)
+  }
