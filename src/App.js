@@ -22,6 +22,8 @@ import UpdateUser from './components/UpdateUser';
 import AddUser from './components/AddUser';
 import RegisterPage from './components/RegisterPage';
 import DeleteUser from'./components/DeleteUser';
+import Recourses from './components/resources';
+import Recourses2 from "./components/adminrecourses";
 /**
  * Application land page
  * 
@@ -69,7 +71,7 @@ if (auth === 'admin') {
 
 <nav className="navbar">
 <div className="logo_header">
-  <a href="/main" className="logo">Learn</a>
+  <a href="/GreekLearner/app/main" className="logo">Learn</a>
  
 </div>
 
@@ -80,21 +82,21 @@ if (auth === 'admin') {
   <div className="dropdown">
     <a href="#" className="dropbtn">Modules ↓</a>  
 <div className="dropdown-content">
-<a href="/tutoriallive">Tutorial Live-Stream</a>
-<a href="/alphabet">Alphabet</a>
-<a href="/tutorialvid">Tutorial Videos</a>
-<a href="/allquizes">All quizes</a>
+<a href="/GreekLearner/app/tutoriallive">Tutorial Live-Stream</a>
+<a href="/GreekLearner/app/alphabet">Alphabet</a>
+<a href="/GreekLearner/app/tutorialvid">Tutorial Videos</a>
+<a href="/GreekLearner/app/allquizes">All quizes</a>
 </div>
 </div>
   </li>
   <li>
-    <a href="/ContactUs" className="nav_links">Contact</a>
+    <a href="/GreekLearner/app/ContactUs" className="nav_links">Contact</a>
   </li>
   <li>
-    <a href="#" className="nav_links">Chat</a>
+    <a href="http://unn-w20024460.newnumyspace.co.uk/GreekLearner/Chat/" className="nav_links">Chat</a>
   </li>
   <li>
-    <a href="/admin" className="nav_links">Sign in</a>
+    <a href="/GreekLearner/app/admin" className="nav_links">Sign in</a>
   </li>
 </ul>
 </nav>  
@@ -121,6 +123,8 @@ if (auth === 'admin') {
 <Route path="/tutoriallive" element = {<TutorialLive/>}/>
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
+<Route path="/recourses" element = {<Recourses2/>}/>
+
 
     <Route path="*" element={<p>Not Found</p>} />
   </Routes>
@@ -138,7 +142,7 @@ return(
 
 <nav className="navbar">
 <div className="logo_header">
-  <a href="/main" className="logo">Learn</a>
+  <a href="/GreekLearner/app/main" className="logo">Learn</a>
  
 </div>
 
@@ -149,21 +153,21 @@ return(
   <div className="dropdown">
     <a href="#" className="dropbtn">Modules ↓</a>  
 <div className="dropdown-content">
-<a href="/tutoriallive">Tutorial Live-Stream</a>
-<a href="/alphabet">Alphabet</a>
-<a href="/tutorialvid">Tutorial Videos</a>
-<a href="/allquizes">All quizes</a>
+<a href="/GreekLearner/app/tutoriallive">Tutorial Live-Stream</a>
+<a href="/GreekLearner/app/alphabet">Alphabet</a>
+<a href="/GreekLearner/app/tutorialvid">Tutorial Videos</a>
+<a href="/GreekLearner/app/allquizes">All quizes</a>
 </div>
 </div>
   </li>
   <li>
-    <a href="/ContactUs" className="nav_links">Contact</a>
+    <a href="/GreekLearner/app/ContactUs" className="nav_links">Contact</a>
   </li>
   <li>
-    <a href="#" className="nav_links">Chat</a>
+    <a href="http://unn-w20024460.newnumyspace.co.uk/GreekLearner/Chat/" className="nav_links">Chat</a>
   </li>
   <li>
-    <a href="/admin" className="nav_links">Sign in</a>
+    <a href="/GreekLearner/app/admin" className="nav_links">Sign in</a>
   </li>
 </ul>
 </nav>  
@@ -182,6 +186,8 @@ return(
 <Route path="/tutoriallive" element = {<TutorialLive/>}/>
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
+<Route path="/recourses" element = {<Recourses/>}/>
+
 </Routes>
 </div>
 );
@@ -200,7 +206,7 @@ return(
 
   <nav className="navbar">
     <div className="logo_header">
-      <a href="/main" className="logo">Learn</a>
+      <a href="/GreekLearner/app/main" className="logo">Learn</a>
      
     </div>
 
@@ -212,21 +218,21 @@ return(
       <div className="dropdown">
         <a href="#" className="dropbtn">Modules ↓</a>  
   <div className="dropdown-content">
-  <a href="/admin" onClick={() => alert("You must be signed in to access this page.")}>Tutorial Live-Stream</a>
-  <a href="/admin" onClick={() => alert("You must be signed in to access this page.")}>Alphabet</a>
-  <a href="/admin" onClick={() => alert("You must be signed in to access this page.")}>Tutorial Videos</a>
-  <a href="/admin" onClick={() => alert("You must be signed in to access this page.")}>All quizes</a>
+  <a href="/GreekLearner/app/admin" onClick={() => alert("You must be signed in to access this page.")}>Tutorial Live-Stream</a>
+  <a href="/GreekLearner/app/admin" onClick={() => alert("You must be signed in to access this page.")}>Alphabet</a>
+  <a href="/GreekLearner/app/admin" onClick={() => alert("You must be signed in to access this page.")}>Tutorial Videos</a>
+  <a href="/GreekLearner/app/admin" onClick={() => alert("You must be signed in to access this page.")}>All quizes</a>
   </div>
 </div>
       </li>
       <li>
-        <a href="/ContactUs" className="nav_links">Contact</a>
+        <a href="/GreekLearner/app/ContactUs" className="nav_links">Contact</a>
       </li>
       <li>
-        <a href="/admin" className="nav_links" onClick={() => alert("You must be signed in to access this page.")}>Chat</a>
+        <a href="/GreekLearner/app/admin" className="nav_links" onClick={() => alert("You must be signed in to access this page.")}>Chat</a>
       </li>
       <li>
-        <a href="/admin" className="nav_links">Sign in</a>
+        <a href="/GreekLearner/app/admin" className="nav_links">Sign in</a>
       </li>
     </ul>
       
@@ -256,6 +262,7 @@ return(
 <Route path="/emailsubmissions" element = {<EmailSubmissions/>}/>
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
+<Route path="/recourses" element = {<Recourses/>}/>
 
 
 

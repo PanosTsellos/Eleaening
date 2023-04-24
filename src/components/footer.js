@@ -37,9 +37,14 @@ function Footer() {
           <div className="col">
             <h4>Services</h4>
             <ui className="list-unstyled">
-            <a href="/ContactUs" target="_blank" rel="noopener noreferrer">
+           <li> <a href="/GreekLearner/app/ContactUs" target="_blank" rel="noopener noreferrer">
         <button className="footerbutton">Contact Us.</button></a>
-            </ui>
+        </li></ui>
+
+            <ui className="list-unstyled">
+            <li><a href="/GreekLearner/app/recourses" target="_blank" rel="noopener noreferrer">
+        <button className="footerbutton">Recourses</button></a>
+        </li></ui>
           </div>
           {/* Column3 */}
           <div className="col">

@@ -9,6 +9,10 @@
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
+  body {
+    margin: 0;
+    padding: 0;
+  }
   
   .all-quizzes-list {
     list-style: none;

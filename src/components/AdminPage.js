@@ -106,9 +106,10 @@ function AdminPage(props) {
       <div>
         <h2>Administrator Dashboard</h2>
         <p>Logged in as: {loggedInAccount}</p>
-       <center> <a href="/emailsubmissions" target="_blank" rel="noopener noreferrer">
+        <center> <a href="/GreekLearner/app/emailsubmissions" target="_blank" rel="noopener noreferrer">
         <button className="footerbutton">Admin - Submissions!</button>
-      </a></center>
+        </a></center>
+    
         <Dashboard handleUpdate={props.handleUpdate} />
         <input type="button" value="Sign out" onClick={handleSignOut} className="signout"/>
       </div>

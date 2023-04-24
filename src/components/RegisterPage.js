@@ -41,26 +41,42 @@ function RegisterPage() {
           Name:  
           <input type="text" value={name} onChange={(event) => setName(event.target.value)} 
          className="registration-input"
+         required 
+      minLength="1"
           />
         </label>
-        <label className="reg-label">
-          Username:
-          <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} 
-          className="registration-input"
-          />
-        </label>
+  <label className="reg-label">
+    Username:
+  <input 
+      type="text" 
+      value={username} 
+      onChange={(event) => setUsername(event.target.value)} 
+      className="registration-input"
+      required 
+      minLength="1"
+    />
+  </label>
         <label className="reg-label">
           Password:
           <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} 
           className="registration-input"
+          required 
+      minLength="1"
           />
         </label>
         <label className="reg-label">
-          Email:
-          <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} 
-          className="registration-input"
-          />
-        </label>
+  Email:
+  <input 
+    type="email" 
+    value={email} 
+    onChange={(event) => setEmail(event.target.value)} 
+    className="registration-input"
+    required 
+    minLength="1"
+    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+  />
+</label>
+
         <button type="submit"className="Reg-button">Register</button>
       </form>
      

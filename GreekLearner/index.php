@@ -69,6 +69,16 @@ if (!in_array($_SERVER['REQUEST_METHOD'], array("GET", "POST"))){
             case'/auth':
                 $endpoint = new Authenticate();
                 break;
+            case '/recourses':
+                $endpoint = new reference();
+                break;
+            case '/addrecourses':
+                $endpoint = new AddReferenceInfo();
+                break;
+            case '/deleterecourses':
+                $endpoint = new DeleteReferenceInfo();
+                break;    
+    
             default:
                 $endpoint = new ClientError("Path not found: " . $path, 404);
         }
