@@ -1,3 +1,7 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
+
 import React, {useState, useEffect} from 'react';
 import {Buffer} from 'buffer';
 import Dashboard from './Dashboard';

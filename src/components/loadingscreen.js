@@ -1,3 +1,7 @@
+
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 

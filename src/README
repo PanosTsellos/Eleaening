@@ -1,0 +1,28 @@
+For this website to work you have to go at: http://unn-w20024460.newnumyspace.co.uk/GreekLearner/app/main
+
+For testing and only purposes to login as a user you will have username: aa | password: aa || Or you can create a new account which will be a user until an admin changes the account settings.
+
+For testing and only purposes to login as an admin you will have username: admin | password: admin
+
+To use the chatroom, you need to login with your google account, and this way you will have a name and an image set for you and other users to chat.
+
+The chatroom was build by using firebase.
+
+The Contact us form sents an email to my personal email, but as an admin you will be able to see the emails through the email submission button at the admin dashboard.
+
+The api's links used for this project are:
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/account
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/homepage
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/addhomeinfo
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/deletehomeinfo
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/tutorialvids
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/addtutorialvid
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/deletetutorialvid
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/contactinfo
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/dashboard
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/auth
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/recourses
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/addrecourses
+-http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/deleterecourses
+

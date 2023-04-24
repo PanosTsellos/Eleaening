@@ -1,3 +1,6 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import React, { useState, useEffect } from 'react';
 
 function ScrollToTopButton(props) {

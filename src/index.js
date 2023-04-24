@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

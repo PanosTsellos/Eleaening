@@ -1,3 +1,7 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
+
 import React, { useState } from 'react';
 import './adduser.css';
 import Dashboard from './Dashboard';

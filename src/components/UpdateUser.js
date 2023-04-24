@@ -1,3 +1,6 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import React, { useState } from 'react';
 import DeleteUser from './DeleteUser';
 import './update.css';

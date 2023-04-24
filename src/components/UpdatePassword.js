@@ -1,3 +1,6 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import React, { useState } from 'react';
 import './update.css';
 function UpdatePassword({props, user, setSelectedUser, setUserList }) {

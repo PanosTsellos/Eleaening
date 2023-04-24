@@ -1,3 +1,7 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
+
 import React, { useState, useEffect, useRef } from 'react';
 import LoadingScreen from './loadingscreen';import Footer from "./footer";
 

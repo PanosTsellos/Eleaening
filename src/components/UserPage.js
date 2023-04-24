@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Buffer} from 'buffer';
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import UserDashboard from './userDashboard';
 import { Link } from 'react-router-dom';
 import './admin.css';

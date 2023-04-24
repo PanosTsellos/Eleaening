@@ -1,3 +1,7 @@
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
+
 import "./Footer.css";
 import React, { useState, useEffect } from "react";
 

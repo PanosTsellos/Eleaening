@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+/**
+ * @author Panagiotis Tsellos w20024460
+ */
 import { Link } from 'react-router-dom';
 import './register.css';
 function RegisterPage() {
