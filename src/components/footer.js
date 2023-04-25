@@ -32,8 +32,8 @@ function Footer() {
           <div className="col">
             <h4>About us</h4>
             <h1 className="list-unstyled">
-              <li><button className="footerbutton">Learn about us.</button></li>
-              
+              <li><a href="/GreekLearner/app/aboutus" target="_blank" rel="noopener noreferrer">
+        <button className="footerbutton">Learn about us.</button></a></li>
               <li><p className="parody">Location: Newcastle Upon Tyne, Unoted Kingdom</p></li>
             </h1>
           </div>
@@ -69,10 +69,11 @@ function Footer() {
             Current Time:
             {time.toLocaleTimeString()}
             <br></br>
-            © Panagiotis Tsellos | All rights reserved |
-           <button className="footerbutton"> Terms Of Service </button>|
-           <button className="footerbutton"> Privacy 
-           </button>|
+            © Panagiotis Tsellos |
+          <a href="/GreekLearner/app/Terms" target="_blank" rel="noopener noreferrer">
+        <button className="footerbutton">Termas Of Service </button></a>|
+        <a href="/GreekLearner/app/Privacy" target="_blank" rel="noopener noreferrer">
+        <button className="footerbutton">Privacy</button></a>
            
            </p>
         </div>

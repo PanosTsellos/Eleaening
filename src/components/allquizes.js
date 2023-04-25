@@ -37,8 +37,9 @@ function AllQuizes() {
           </Link>
         </li>
       </ul>
-      <Footer></Footer>
     </div>
+    <Footer></Footer>
+
     </div>  
   );
 }

@@ -45,54 +45,61 @@ footer{
   background-color: #61dafb;
 }
 
-/*Nav Bar*/
-a{
+/* Nav Bar */
+a {
   text-decoration: none;
-    width: 100%;
-
-}
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding-top: 0.8%;
-  padding-bottom: 0.8%;
-  background-color: #000000;
-  font-size: 15px;
-
 }
 
-.logo{
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Added to wrap items to new lines on small screens */
+  justify-content: space-between;
+  align-items: center; /* Added to center items vertically */
+  padding-top: 1rem; /* Changed to use rem for better scalability */
+  padding-bottom: 1rem; /* Changed to use rem for better scalability */
+  background-color: #272525;
+  font-size: 1rem; /* Changed to use rem for better scalability */
+}
+
+.logo {
   margin-left: 5%;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 1.25rem; /* Changed to use rem for better scalability */
   font-weight: bold;
 }
-.logo_header{
+
+.logo_header {
   display: flex;
+  align-items: center; /* Added to center items vertically */
   margin-left: 2%;
 }
 
-.main_nav{
+.main_nav {
   display: flex;
-  width: 67%;
-  float: right;
-  margin-right: 5%;
+  flex-wrap: wrap; /* Added to wrap items to new lines on small screens */
+  width: 100%; /* Changed to use 100% width on small screens */
+  margin-top: 1rem; /* Changed to use rem for better scalability */
   justify-content: space-between;
   list-style: none;
-  
-}
-.main_nav li:hover{
-  background-color: gray
+  padding-left: 0; /* Removed default padding from list */
 }
 
-.main_nav li{
-  display: inline;
+.main_nav li:hover {
+  background-color: gray;
+}
+
+.main_nav li {
+  display: block; /* Changed to display block on small screens */
+  margin-top: 0.5rem; /* Changed to use rem for better scalability */
   color: #ffffff;
 }
-.main_nav li a{
+
+.main_nav li a {
+  display: block; /* Changed to display block on small screens */
+  padding: 0.5rem; /* Changed to use rem for better scalability */
   color: #ffffff;
+  text-align: center; /* Added to center text on small screens */
 }
 
 /*Login/Register*/

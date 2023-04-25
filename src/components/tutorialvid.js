@@ -57,6 +57,7 @@ function TutorialVideos() {
   }
 
   return (
+    <div>
    <Container>
      {isLoading ? <LoadingScreen /> : null}
 <div>
@@ -109,13 +110,14 @@ function TutorialVideos() {
               <p>
               
 </p>
-<Footer></Footer>
 
           </div>
 
         ))}
-        <Footer></Footer>
 </Container>
+<Footer></Footer>
+
+</div>
 );
 <footer>
     

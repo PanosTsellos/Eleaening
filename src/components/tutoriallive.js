@@ -25,19 +25,20 @@ function Tutoriallive() {
     );
   }
   return (
-   <Container>
-     {isLoading ? <LoadingScreen /> : null}
 <div>
+<Container>
+{isLoading ? <LoadingScreen /> : null}
+
 <h1>Learn Greek and information about Greece</h1>
 <h2>Livestream 24/7!</h2>
 <div className="ratio ratio-16x9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cdJPkSfNnL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+</Container>
 
 <Footer></Footer>
 
     </div>
-</Container>
 
 );
 }

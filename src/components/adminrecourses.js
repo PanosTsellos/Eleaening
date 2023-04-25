@@ -7,7 +7,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 import LoadingScreen from './loadingscreen';
 import Footer from './footer';
 
-function AdminRecourses(props) {
+function AdminRecourses() {
   
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -97,6 +97,7 @@ function AdminRecourses(props) {
       const token = localStorage.getItem('token');
 
     
+       
       fetch(`http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/addrecourses?title=${title}&content=${content}`, {
         method: 'POST',
         headers: new Headers( { "Authorization": "Bearer " + token}),

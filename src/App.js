@@ -24,6 +24,9 @@ import RegisterPage from './components/RegisterPage';
 import DeleteUser from'./components/DeleteUser';
 import Recourses from './components/resources';
 import Recourses2 from "./components/adminrecourses";
+import AboutUs from "./components/aboutus";
+import Terms from "./components/termsofservice";
+import Privacy from "./components/privacy";
 /**
  * Application land page
  * 
@@ -59,7 +62,9 @@ function App() {
      },[update]);
    
      const handleUpdate = () => {setUpdated(update+1)}
+     const [isActive, setIsActive] = useState(false);
 
+     
 //these are the links for the admins and admins only.
 if (auth === 'admin') {
   return (
@@ -124,7 +129,9 @@ if (auth === 'admin') {
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
 <Route path="/recourses" element = {<Recourses2/>}/>
-
+<Route path="/aboutus" element = {<AboutUs/>}/>
+<Route path="/Terms" element = {<Terms/>}/>
+<Route path="/Privacy" element = {<Privacy/>}/>
 
     <Route path="*" element={<p>Not Found</p>} />
   </Routes>
@@ -183,10 +190,14 @@ return(
 <Route path="/BasicsOfGreekLanguage" element={<BasicsOfGreekLanguage />}/>
 <Route path="/BasicsOfGreekLanguage2" element={<BasicsOfGreekLanguage2 />}/>
 <Route path="/tutorialvid" element={<TutorialVideos />}/>
+<Route path="/aboutus" element = {<AboutUs/>}/>
+
 <Route path="/tutoriallive" element = {<TutorialLive/>}/>
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
 <Route path="/recourses" element = {<Recourses/>}/>
+<Route path="/Terms" element = {<Terms/>}/>
+<Route path="/Privacy" element = {<Privacy/>}/>
 
 </Routes>
 </div>
@@ -259,10 +270,14 @@ return(
 <Route path="/tutorialvid" element={<TutorialVideos />}/>
 <Route path="/tutorialvid2" element={<TutorialVideos2 />}/>
 <Route path="/tutoriallive" element = {<TutorialLive/>}/>
+<Route path="/Terms" element = {<Terms/>}/>
 <Route path="/emailsubmissions" element = {<EmailSubmissions/>}/>
 <Route path="/generalquiz" element = {<GeneralQuiz/>}/>
 <Route path="/allquizes" element = {<AllQuizes/>}/>
 <Route path="/recourses" element = {<Recourses/>}/>
+<Route path="/aboutus" element = {<AboutUs/>}/>
+<Route path="/Privacy" element = {<Privacy/>}/>
+
 
 
 

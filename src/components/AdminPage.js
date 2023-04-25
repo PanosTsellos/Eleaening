@@ -103,7 +103,7 @@ function AdminPage(props) {
   const loggedInAccount = storedUsername;
 
   return (
- 
+ <div>
 <div className="container">
   
     {props.authenticated && 
@@ -147,9 +147,9 @@ function AdminPage(props) {
        </p>
       </div>
       }
-     <Footer></Footer>
     </div>
-   
+        <Footer></Footer>
+</div>
   )
 }
 export default AdminPage;
