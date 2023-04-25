@@ -73,7 +73,7 @@ if (!in_array($_SERVER['REQUEST_METHOD'], array("GET", "POST"))){
                 $endpoint = new reference();
                 break;
             case '/addrecourses':
-                $endpoint = new AddReferenceInfo();
+                $endpoint = new Addrecourses();
                 break;
             case '/deleterecourses':
                 $endpoint = new DeleteReferenceInfo();
