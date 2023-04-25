@@ -12,6 +12,8 @@ The chatroom was build by using firebase.
 
 The Contact us form sents an email to my personal email, but as an admin you will be able to see the emails through the email submission button at the admin dashboard.
 
+GitHub rep: https://github.com/PanosTsellos/Eleaening/
+
 The api's links used for this project are:
 -http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/
 -http://unn-w20024460.newnumyspace.co.uk/GreekLearner/api/account
