@@ -34,7 +34,7 @@ function Footer() {
             <h1 className="list-unstyled">
               <li><a href="/GreekLearner/app/aboutus" target="_blank" rel="noopener noreferrer">
         <button className="footerbutton">Learn about us.</button></a></li>
-              <li><p className="parody">Location: Newcastle Upon Tyne, Unoted Kingdom</p></li>
+              <li><p className="parody">Location: Newcastle Upon Tyne, United Kingdom</p></li>
             </h1>
           </div>
           {/* Column2 */}
@@ -47,7 +47,7 @@ function Footer() {
 
             <ui className="list-unstyled">
             <li><a href="/GreekLearner/app/recourses" target="_blank" rel="noopener noreferrer">
-        <button className="footerbutton">Recourses</button></a>
+        <button className="footerbutton">Resources.</button></a>
         </li></ui>
           </div>
           {/* Column3 */}
@@ -55,7 +55,7 @@ function Footer() {
             <h4>Social Media</h4>
             <ui className="list-unstyled">
             <li><button className="footerbutton">Twitter.</button></li>
-            <li><button className="footerbutton">Instangram.</button></li>
+            <li><button className="footerbutton">Instagram.</button></li>
             </ui>
           </div>
         </div>
@@ -71,7 +71,7 @@ function Footer() {
             <br></br>
             © Panagiotis Tsellos |
           <a href="/GreekLearner/app/Terms" target="_blank" rel="noopener noreferrer">
-        <button className="footerbutton">Termas Of Service </button></a>|
+        <button className="footerbutton">Terms Of Service </button></a>|
         <a href="/GreekLearner/app/Privacy" target="_blank" rel="noopener noreferrer">
         <button className="footerbutton">Privacy</button></a>
            

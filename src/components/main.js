@@ -88,50 +88,51 @@ function Main() {
 
   return (
     <div>
-    {isLoading ? <LoadingScreen /> : null}
-    <div className='main'>
-      <h1>{title}</h1>
-      {northumbria}
-      <div id='slideshow-container'>
-        <img
-          className='slideshow-image'
-          src={currentSlideIndex === 0 ? image1 : currentSlideIndex === 1 ? image2 : image3}
-          alt={`Slide ${currentSlideIndex + 1}`} 
-        />
-        <div className='slideshow-buttons'>
-          <button className='slideshow-button' onClick={handlePrev}>
-          ⬅
-          </button>
-          <button className='slideshow-button' onClick={handleNext}>
-          ➡
-          </button>
-        </div>
+  {isLoading ? <LoadingScreen /> : null}
+  <div className='main'>
+    <h1>{title}</h1>
+    {northumbria}
+    <div id='slideshow-container'>
+      <img
+        className='slideshow-image'
+        src={currentSlideIndex === 0 ? image1 : currentSlideIndex === 1 ? image2 : image3}
+        alt={`Slide ${currentSlideIndex + 1}`} 
+      />
+      <div className='slideshow-buttons'>
+        <button className='slideshow-button' onClick={handlePrev}>
+        ⬅
+        </button>
+        <button className='slideshow-button' onClick={handleNext}>
+        ➡
+        </button>
       </div>
     </div>
-    <div className="grid-container">
-          {filteredData.map((item) => (
-            <div className="grid-item" key={item.title}>
-              <img
-                src={`${item.img_url}`}
-                alt="home"
-              />
-              <p>
-                <strong>Title: </strong>
-                {item.title}
-              </p>
-              <p>
-                <strong>Content: </strong>
-                {item.content}
-              </p>
-              <p>
-                <strong>Date: </strong>
-                {item.date_published}
-              </p>              
-            </div>
-          ))}
-        </div>
-        <Footer></Footer>
-    </div>
+  </div>
+  <div className="grid-container-vertical"> // added CSS class for vertical display
+    {filteredData.map((item) => (
+      <div className="grid-item" key={item.title}>
+        <img
+          src={`${item.img_url}`}
+          alt="home"
+        />
+        <p>
+          <strong>Title: </strong>
+          {item.title}
+        </p>
+        <p>
+          <strong>Content: </strong>
+          {item.content}
+        </p>
+        <p>
+          <strong>Date: </strong>
+          {item.date_published}
+        </p>              
+      </div>
+    ))}
+  </div>
+  <Footer></Footer>
+</div>
+
   );
 }
 

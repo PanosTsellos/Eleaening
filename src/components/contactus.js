@@ -86,7 +86,8 @@ function ContactUs() {
   
 
     return (
-   <div>
+      <div>
+           <div>
           {isLoading ? <LoadingScreen /> : null}
       <div className="contactme" id="contact">
         <div className="contactOverlay">
@@ -129,11 +130,12 @@ function ContactUs() {
             </div>
           </div>
         </div>
-        <Footer></Footer>
+       
       </div>
-  
+      
       </div>
-
+      <Footer></Footer>
+      </div>
   );
 }
 

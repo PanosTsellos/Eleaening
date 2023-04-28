@@ -50,7 +50,6 @@ function Emailinfo(props) {
             {props.loading && <p>Loading...</p>}
             </div>}
             </div>
-            <Footer></Footer>
 
         </div>
     )

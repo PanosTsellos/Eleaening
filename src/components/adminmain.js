@@ -166,92 +166,87 @@ function Main(props) {
 
    return (   
 <div>
-    {isLoading ? <LoadingScreen /> : null} {/* render the LoadingScreen component if isLoading is true */}
-   
-    <div className='main'>
-      <h1>{title}</h1>
-      {northumbria}
-      <div id='slideshow-container'>
-        <img
-          className='slideshow-image'
-          src={currentSlideIndex === 0 ? image1 : currentSlideIndex === 1 ? image2 : image3}
-          alt={`Slide ${currentSlideIndex + 1}`} 
-        />
-        <div className='slideshow-buttons'>
-          <button className='slideshow-button' onClick={handlePrev}>
+  {isLoading ? <LoadingScreen /> : null} {/* render the LoadingScreen component if isLoading is true */}
+  
+  <div className='main'>
+    <h1>{title}</h1>
+    {northumbria}
+    <div id='slideshow-container'>
+      <img
+        className='slideshow-image'
+        src={currentSlideIndex === 0 ? image1 : currentSlideIndex === 1 ? image2 : image3}
+        alt={`Slide ${currentSlideIndex + 1}`} 
+      />
+      <div className='slideshow-buttons'>
+        <button className='slideshow-button' onClick={handlePrev}>
           ⬅
-          </button>
-          <button className='slideshow-button' onClick={handleNext}>
+        </button>
+        <button className='slideshow-button' onClick={handleNext}>
           ➡
-          </button>
-        </div>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div className="Data">
-      
-      <strong>Search a specific title here!</strong>  
-      <div className="search-bar">
-        <input type="text" placeholder="Search" value={searchTerm} onChange={title => setSearchTerm(title.target.value)} />
-      </div>
+  <div className="Data">
+    <strong>Search a specific title here!</strong>  
+    <div className="search-bar">
+      <input type="text" placeholder="Search" value={searchTerm} onChange={title => setSearchTerm(title.target.value)} />
+    </div>
 
-        
-      <div className="add-homeInfo">
-        <button type="button" onClick={() => setIsAddingInfo(true)}>Add Home Information Here!</button>
-        {isAddingInfo &&
-          <form ref={formRef} onSubmit={handleAddInfo}>
-           <input type="text" placeholder="Add Info title. It needs to be unique to insert the data." value={newInfoTitle} onChange={home => setNewInfoTitle(home.target.value)} />
+    <div className="add-homeInfo">
+      <button type="button" onClick={() => setIsAddingInfo(true)}>Add Home Information Here!</button>
+      {isAddingInfo &&
+        <form ref={formRef} onSubmit={handleAddInfo}>
+          <input type="text" placeholder="Add Info title. It needs to be unique to insert the data." value={newInfoTitle} onChange={home => setNewInfoTitle(home.target.value)} />
 
-           <input type="text" placeholder="Add Info content" value={newInfoContent} onChange={home => setNewInfoContent(home.target.value)}style={{ resize: 'vertical' }} />
+          <input type="text" placeholder="Add Info content" value={newInfoContent} onChange={home => setNewInfoContent(home.target.value)}style={{ resize: 'vertical' }} />
 
-           <input type="text" placeholder="Add Info date." value={newInfoDate} onChange={home => setNewInfoDate(home.target.value)} />
+          <input type="text" placeholder="Add Info date." value={newInfoDate} onChange={home => setNewInfoDate(home.target.value)} />
 
-           <input type="text" placeholder="Add Info Image URL." value={newInfoImage} onChange={home => setNewInfoImage(home.target.value)} />
-            <button type="submit" disabled={submitting}>Submit</button>
+          <input type="text" placeholder="Add Info Image URL." value={newInfoImage} onChange={home => setNewInfoImage(home.target.value)} />
+          <button type="submit" disabled={submitting}>Submit</button>
 
-            <button type="button" onClick={() => {setIsAddingInfo(false); setAddInfoMessage(null)}}>Cancel</button>
-          </form>
-        }
-        {addInfoMessage &&
-          <p>{addInfoMessage}</p>
-        }
-      </div>
+          <button type="button" onClick={() => {setIsAddingInfo(false); setAddInfoMessage(null)}}>Cancel</button>
+        </form>
+      }
+      {addInfoMessage &&
+        <p>{addInfoMessage}</p>
+      }
+    </div>
 
-
-      <div className="grid-container">
-          {filteredData.map((item) => (
-            <div className="grid-item" key={item.title}>
-              <img
-                src={`${item.img_url}`}
-                alt="home"
-              />
-              <p>
-                <strong>Title: </strong>
-                {item.title}
-              </p>
-              <p>
-                <strong>Content: </strong>
-                {item.content}
-              </p>
-              <p>
-                <strong>Date: </strong>
-                {item.date_published}
-              </p>
-              <p>
-              
-</p>
+    <div className="grid-container-vertical">
+      {filteredData.map((item) => (
+        <div className="grid-item" key={item.title}>
+          <img
+            src={`${item.img_url}`}
+            alt="home"
+          />
+          <div>
+            <p>
+              <strong>Title: </strong>
+              {item.title}
+            </p>
+            <p>
+              <strong>Content: </strong>
+              {item.content}
+            </p>
+            <p>
+              <strong>Date: </strong>
+              {item.date_published}
+            </p>
+          </div>
+          <div>
             <button type="button" className="delete-btn" onClick={() => handleDelete(item.title)}>Delete</button>
           </div>
-
-        ))}
-      </div>
-
-
-
+        </div>
+      ))}
     </div>
-    <ScrollToTopButton />
-    <Footer></Footer>
-    </div>
+  </div>
+  <ScrollToTopButton />
+  <Footer></Footer>
+</div>
+
 );
 
   

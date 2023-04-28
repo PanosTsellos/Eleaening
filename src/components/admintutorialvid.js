@@ -173,7 +173,7 @@ callCallback @ react-dom.deve
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4P8NwDgt2ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-      <a href="/BasicsOfGreekLanguage" target="_blank" rel="noopener noreferrer">
+      <a href="/GreekLearner/app/BasicsOfGreekLanguage" target="_blank" rel="noopener noreferrer">
         <button>Click to test your knowledge!</button>
       </a>
     </div>
@@ -184,7 +184,7 @@ callCallback @ react-dom.deve
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lgzSoUTRZe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-      <a href="/BasicsOfGreekLanguage2" target="_blank" rel="noopener noreferrer">
+      <a href="/GreekLearner/app/BasicsOfGreekLanguage2" target="_blank" rel="noopener noreferrer">
         <button>Click to test your knowledge!</button>
       </a>
     </div>
