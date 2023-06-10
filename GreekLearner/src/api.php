@@ -1,7 +1,7 @@
 <?php
  /**
  * A general class for endpoints
- * @author Panagiotis Tamboukaris
+ * @author Panagiotis Tsellos
  */
  abstract class api
 {
